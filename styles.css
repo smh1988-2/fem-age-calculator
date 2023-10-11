@@ -156,19 +156,18 @@ main {
   background-color: var(--white);
   max-width: 840px;
   margin: auto;
-  padding: 60px;
+  padding: 60px 24px;
   border-radius: 25px 25px 200px 25px;
 }
 
 .form-container {
   position: relative;
-  padding-right: 200px;
   border-bottom: 2px solid var(--light-gray);
 }
 
 .form-container form {
   display: flex;
-  gap: 32px;
+  gap: 16px;
   padding-bottom: 48px;
 }
 
@@ -184,19 +183,19 @@ main {
 .form-input-container {
   display: flex;
   flex-direction: column;
-  max-width: 160px;
+  max-width: 100px;
 }
 
 form input {
   font-weight: var(--fw-800);
-  font-size: 32px;
+  font-size: 24px;
   border-radius: 8px;
   border: 1px solid var(--light-gray);
   padding: 16px;
 }
 
 input:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 input:focus {
@@ -207,24 +206,27 @@ input:focus-visible {
   outline: none;
 }
 
-
 .submit-btn {
-    border-radius: 100%;
-    width: 95px;
-    height: 95px;
-    aspect-ratio: 1 / 1;
-    border: none;
-    background-color: var(--highlight);
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    transform: translateY(50%);
-    transition: background-color 400ms ease-in-out;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 1 / 1;
+  border: none;
+  background-color: var(--highlight);
+  position: absolute;
+  bottom: 0px;
+  right: 42%;
+  transform: translateY(50%);
+  transition: background-color 400ms ease-in-out;
 }
 
 .submit-btn:hover {
-    background-color: var(--black);
-    cursor: pointer;
+  background-color: var(--black);
+  cursor: pointer;
+}
+
+.submit-btn img {
+  width: 25px;
 }
 
 .results-container {
@@ -235,7 +237,7 @@ input:focus-visible {
 }
 
 .result-text {
-  font-size: 80px;
+  font-size: 60px;
   font-style: italic;
   font-weight: var(--fw-800);
 }
@@ -243,4 +245,40 @@ input:focus-visible {
 .result-number {
   color: var(--highlight);
   letter-spacing: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-container {
+    padding: 60px;
+  }
+
+  .form-container {
+    padding-right: 200px;
+  }
+
+  .form-container form {
+    gap: 32px;
+  }
+
+  .form-input-container {
+    max-width: 160px;
+  }
+
+  form input {
+    font-size: 32px;
+  }
+
+  .result-text {
+    font-size: 80px;
+  }
+
+  .submit-btn {
+    width: 95px;
+    height: 95px;
+    right: 0px;
+  }
+
+  .submit-btn img {
+    width: 50%;
+  }
 }
