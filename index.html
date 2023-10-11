@@ -26,25 +26,27 @@
           <form>
             <div class="form-input-container">
               <label for="day" class="label">Day</label>
-              <input type="number" id="day" name="day" placeholder="DD" />
+              <input type="text" id="day" name="day" placeholder="DD" />
             </div>
 
             <div class="form-input-container">
               <label for="month" class="label">Month</label>
-              <input type="number" id="month" name="month" placeholder="MM" />
+              <input type="text" id="month" name="month" placeholder="MM" />
             </div>
 
             <div class="form-input-container">
               <label for="year" class="label">Year</label>
-              <input type="number" id="year" name="year" placeholder="YYYY" />
+              <input type="text" id="year" name="year" placeholder="YYYY" />
             </div>
+
+            <button class="submit-btn"><img src="./assets/images/icon-arrow.svg"></button>
           </form>
         </section>
 
         <section class="results-container">
-          <p class="result-text">-- years</p>
-          <p class="result-text">-- months</p>
-          <p class="result-text">-- days</p>
+          <p class="result-text"><span class="result-number">--</span> years</p>
+          <p class="result-text"><span class="result-number">--</span> months</p>
+          <p class="result-text"><span class="result-number">--</span> days</p>
         </section>
       </section>
     </main>
