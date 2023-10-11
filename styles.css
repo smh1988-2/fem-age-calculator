@@ -165,7 +165,7 @@ main {
   border-bottom: 2px solid var(--light-gray);
 }
 
-.form-container form {
+.form-container .date-form {
   display: flex;
   gap: 16px;
   padding-bottom: 48px;
@@ -186,7 +186,7 @@ main {
   max-width: 100px;
 }
 
-form input {
+.date-form input {
   font-weight: var(--fw-800);
   font-size: 24px;
   border-radius: 8px;
@@ -256,7 +256,7 @@ input:focus-visible {
     padding-right: 200px;
   }
 
-  .form-container form {
+  .date-form {
     gap: 32px;
   }
 
@@ -264,7 +264,7 @@ input:focus-visible {
     max-width: 160px;
   }
 
-  form input {
+  .date-form input {
     font-size: 32px;
   }
 
