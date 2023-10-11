@@ -46,3 +46,28 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+:root {
+    --light-gray: #F0F0F0;
+    --white: #fff;
+}
+
+
+body {
+    background-color: var(--light-gray);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    background-color: var(--white);
+    max-width: 840px;
+    margin: auto;
+    padding: 60px;
+    border-radius: 25px 25px 100px  25px;
+}
