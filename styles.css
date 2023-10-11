@@ -49,11 +49,17 @@ table {
 
 :root {
     --light-gray: #F0F0F0;
+    --dark-gray: #838383;
     --white: #fff;
+
+    --fw-400: 400;
+    --fw-700: 700;
+    --fw-800: 800;
 }
 
 
 body {
+    font-family: 'Poppins', sans-serif;
     background-color: var(--light-gray);
 }
 
@@ -70,4 +76,35 @@ main {
     margin: auto;
     padding: 60px;
     border-radius: 25px 25px 100px  25px;
+}
+
+.form-container form {
+    display: flex;
+    gap: 32px;
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 60px;
+}
+
+.label {
+    text-transform: uppercase;
+    color: var(--dark-gray);
+    font-weight: var(--fw-400);
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.form-input-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form input {
+    max-width: 160px;
+    font-weight: var(--fw-800);
+    font-size: 32px;
+    border-radius: 8px;
+    border: 1px solid var(--light-gray);
+    padding: 16px;
 }
