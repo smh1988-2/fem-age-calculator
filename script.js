@@ -19,8 +19,6 @@ dateForm.addEventListener("submit", function (e) {
     year.value + "-" + month.value + "-" + day.value
   );
 
-  console.log("dateEntered", dateEntered);
-
   const currentDate = new Date();
 
   if (isNaN(dateEntered)) {
