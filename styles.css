@@ -260,7 +260,6 @@ input:focus-visible {
 
 .result-number {
   color: var(--highlight);
-  letter-spacing: 12px;
 }
 
 @media screen and (min-width: 768px) {
