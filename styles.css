@@ -132,6 +132,7 @@ table {
   --light-gray: #f0f0f0;
   --dark-gray: #838383;
   --highlight: #7c4ff6;
+  --error: #d15358;
   --white: #fff;
   --black: #000;
 
@@ -204,6 +205,21 @@ input:focus {
 
 input:focus-visible {
   outline: none;
+}
+
+.error-message.active {
+  margin-top: 12px;
+  font-style: italic;
+  color: var(--error);
+  font-size: 12px;
+}
+
+.form-input-container:has(.error-message.active) label {
+    color: var(--error);
+}
+
+.form-input-container:has(.error-message.active) input {
+    border-color: var(--error);
 }
 
 .submit-btn {
